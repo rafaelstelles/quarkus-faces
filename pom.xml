@@ -15,6 +15,7 @@
         <primefaces-quarkus.version>3.13.6</primefaces-quarkus.version>
         <myfaces.version>4.0.1</myfaces.version>
         <quarkus.version>3.5.3</quarkus.version>
+		<rewrite.version>10.0.2.Final</rewrite.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -110,6 +111,17 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
+
+		<dependency>
+			<groupId>org.ocpsoft.rewrite</groupId>
+			<artifactId>rewrite-servlet</artifactId>
+			<version>${rewrite.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ocpsoft.rewrite</groupId>
+			<artifactId>rewrite-integration-cdi</artifactId>
+			<version>${rewrite.version}</version>
+		</dependency>
     </dependencies>
     <build>
         <finalName>${project.name}</finalName>
